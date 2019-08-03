@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio do País de Origem</title>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    <input type="text" name="txtNacionalidade" id="txtNacionalidade">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado">
+
+    </div>
+    <script>
+        var pais = window.document.getElementById('txtNacionalidade');
+        var texto = window.document.getElementById('resultado');
+        function verificar(){
+            var verificacao = String(pais.value).toLowerCase(); //Essa jogada é feita para poder digitar nome em letra maiuscula ou não
+            texto.innerHTML = `<p>Você nasceu em <strong>${pais.value}</strong>!`;
+            if(verificacao == 'brasil'){
+                texto.innerHTML += `<p>Você é Brasileiro.</p>`
+            } else if(verificacao == 'eua'){
+                texto.innerHTML += `<p>Você é Norte Ameriano.</p>`
+            } else{
+                texto.innerHTML += `<p>Você é Estrangeiro.</p>`
+            }
+        }
+    </script>
+</body>
+</html>

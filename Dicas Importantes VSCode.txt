@@ -1,0 +1,8 @@
+Para usar um arquivo CSS no html, dentro do <head> digitar link:CSS e clicar em cima, automáticamente ele criará o link.
+Depois dar o nome ao arquivo, exemplo "estilo.css" depois clicar em cima desse nome segurando o "Ctrl", dará um erro e a opção para criar o arquivo automáticamente.
+
+Da mesma forma para criar o script em arquivo separado digitar no final do body script:src e dar um nome ao arquivo;
+
+PEXELS é um banco de imagens que tem opções gratuítas, no google imagens existem imagens proprietárias.
+
+Melhor formato de imagem para WEB PNG24

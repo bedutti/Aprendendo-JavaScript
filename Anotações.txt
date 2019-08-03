@@ -1,0 +1,184 @@
+Conteúdo	->	HTML
+Design		->	CSS
+Interatividade	->	JavaScript
+
+instalar o Node.JS no Windows (arrumar o path)
+instalar o Visual Studio Code no Windows
+Adicionar a extensão Node Exec no Visual Studio Code, para poder executar arquivos .js diretamente de dentro do visual studio com a tecla F8
+
+Em JavaScript não precisa usar ponto e vírgula, mas pode usar sem problemas
+
+DOM significa Document Object Model (Modelo de Objetos para Documentos)
+Árvore DOM - Aula 9
+	window
+		.location
+		.document
+			.html
+				.head
+					.meta
+					.title
+				.body
+					.h1
+					.p
+					.p
+						.strong
+					.div
+		.history
+Na árvore todos os itens são chamados de elementos.
+Podemos selecionar os elementos de cinco maneiras:
+por Marca
+	getElementsByTagName()[]	Ele procura por tipos de elementos, por exemplo 'p' (parágrafo) e pode colocar em uma variável
+por ID
+	getElementById()
+por Nome
+	getElementsByName()[]
+por Classe
+	getElementsByClassName()[]
+pro Seletor (faz seleção através de elementos CSS)
+	querySelector()
+	querySelectorAll()
+
+Se no HTML você deu um "id" ao elemento você busca com o "querySlector(div#nome1)"
+Se no HTML você deu uma "class" ao elemento você busca com "querySlector(div.nome1)"
+
+Nomes de arquivo, sempre em letras minúsculas.
+
+node.exe
+.exit	fecha o node.exe
+
+No Visual Studio Code, digitar html e então escolher a versão 5, já faz aparecer a programação básica do HTML
+
+
+style é CSS
+script é JavaScript
+O <script> código </script> vai no final dentro do body do HTML
+
+Operadores:
+Aritméticos	
+		5 +  2 -> 7	concatenação de string ou soma de numeros
+		5 -  2 -> 3	subtração
+		5 *  2 -> 10	multiplicação
+		5 /  2 -> 2.5	divisão real (em JS já sai em número real)
+		5 %  2 -> 1	resto da divisão inteira
+		5 ** 2 -> 25 	potência
+Atribuição
+		var a = 3		8
+		var b = a % 5		3
+		var c = 5 * b **2	45
+		var d = 10 - a / 2	6
+		var e = 6 * 2 / d	2
+		var f = b % e + 4 / e	3
+Auto-atribuição
+		n = 3
+		n = n + 4	n += 4		//n vira 7
+		n = n - 5	n -= 5		//n vira 2
+		n = n * 4	n *= 4		//n vira 8
+		n = n / 2	n /= 2		//n vira 4
+		n = n ** 2	n **= 2		//n vira 16
+		n = n % 5	n %= 5		//n vira 1
+		n = n + 1	n++		//n vira 2
+		n = n - 1	n--		//n vira 1
+		Obs.: n++ mostra o valor anterior e depois incrementa, ++n incrementa e depois mostra o valor já incrementado
+Relacionais
+		5 >  2 -> true		maior
+		7 <  4 -> false		menor
+		8 >= 8 -> true		maior ou igual
+		9 <= 7 -> false		menor ou igual
+		5 == 5 -> true		é IGUAL comparando
+		4 != 4 -> false		é diferente
+		5 == '5' -> true	em JS ele compara numero com string e da certo essa bosta
+		5 === '5' -> false	ai ele compara o tipo e ve se é identico
+		5 !== '5' -> true	ele vê que o tipo é diferente
+Lógicos
+		!	negação		!true -> false
+		&&	conjunção "E"	true && true -> true
+		||	disjunção "OU"	true || false -> true
+		ordem:	1º "não" 2º "E" 3º "OU"
+Ternário ... ? ... : ...
+		? : ->	teste ? true : false //média >= 7 ? "Aprovado" : "Reprovado" é tipo um if/else
+
+PRECEDENCIA
+Aritmetricos -> relacionais -> lógicos -> ternário
+
+Repetição
+
+while(condição){
+
+ bla bla bla
+
+}
+
+do{
+
+}while(condição)
+
+for(inicio ; teste ; incremento){
+
+ bla bla bla
+
+}
+
+Condições:
+Condição simples e composta (simples sem o else)
+if-else //O else é opcional
+if(condição){
+ <true>
+} else{
+ <false>
+}
+
+Condição Aninhada
+if(condição1){
+ <true1>
+} else if (condição2){
+ <true2>
+} else{
+ <allFalse>
+}
+
+Condições Fixas
+switch(expressão){
+ case valor1:
+	bla bla
+	bla bla
+	break;
+ case valor2:
+	bla bla
+	bla bla
+	break;
+ case valor3:
+	bla bla
+	bla bla
+	break;
+ default:
+	bla bla
+	bla bla
+	break;
+}
+
+O nome da variável se chama identificadores
+Identificadores devem:
+Começas com letras, $ ou _
+Não pode começar com número
+Pode usar letras e numeros
+Não pode ter espaços
+Não pode usar palavra reservada
+Maiusculas e minusculas fazem diferença
+
+No terminal do Microsoft Studio Code, você precisa dar exit para fechá-lo, não basta apertar o xizinho.
+
+VARIÁVEIS EM JS (comando typeof para descobrir qual o tipo daqueala variavel)
+Em JS as variáveis podem mudar de tipo durante a execução e ela se adequa ao tamanho necessário.
+- number (Infinity) (NaN)
+- string
+- boolean
+- undefined
+- object (Array)
+- function
+
+Strings => entre aspas " " ou aspas simples ' ' são strings normais, entre crases `` são template strings
+
+`Estou aprendendo ${nome}`; //${} é uma placeHolder
+s.length() //quantas letras tem a string
+s.toUpperCase() //tudo letra maiusculas
+s.toLowerCase() //tudo minusculo

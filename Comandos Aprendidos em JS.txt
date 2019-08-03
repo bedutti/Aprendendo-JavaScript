@@ -1,0 +1,52 @@
+<script> ... </script> colocar os comandos em JS dentro dessas tags em arquivos HTML
+
+//para comentários apenas no JS
+
+/*
+comentarios
+em varias linhas
+apenas no JS
+*/
+
+/**Comentário em CSS**/
+
+<!--Comentário em HTML-->
+
+window.alert(''); //Janela apenas com OK
+window.confirm(''); //Janela com confirmação. SIM e NÃO
+window.prompt(''); //Janela com entrada de DADOS sempre retornando uma string
+
+var n1 = 5; //criando uma variavel, atribuindo cinco
+var s1 = "JavaScript"; //croamdp ima string
+
+Number.parseInt(num); //converte o dado para número inteiro
+Number.parseFloat(num); //converte o dado para número real
+Numer(num); //O JS decide qual variavel usar
+String(val); //Converte para String
+n.toString(); //Transforma n em String
+
+document.write(texto); //escreve no corpo do HTML
+document.writeLn(texto); //escreve e pula uma linha no corpo do HTML
+
+s1.replace('.', ',') //troca ponto por virgula, posso trocar qualquer string por outra qualquer
+
+var n1 = 1545.5 //no node
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+n1 será R$ 1,545.50 //no navegador a virgula e ponto estarão corretos
+
+Eventos: //Esses nomes estão em JS, em CSS é diferente
+mouseenter
+mousemove
+mousedown
+mouseup
+click
+mouseout
+
+funções:
+function ação(parametro){
+
+}
+
+var agora = new Date(); //criando uma variável de data pegando a data atual da máquina
+agora.getHours() //pega a hora atual
+agora.getDay() //pega o dia da semana de 0 a 6 - Domingo a Sabado

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+    <style>
+        div#area1{
+            font: normal 15pt Arial;
+            background: aqua;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+        div#area2{
+            font: normal 18pt Arial;
+            background: black;
+            color: purple;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            position: fixed;
+            top: 10px;
+            left: 220px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area1" onclick="clicarArea1()" onmouseenter="entrouArea1()" onmouseout="saiuArea1()">
+        Área 1
+    </div>
+    <br>
+    <div id="area2">
+        Área 2
+    </div>
+    <script>
+        var click1 = 0;
+        var enter1 = 0;
+        var saiu1 = 0;
+        var click2 = 0;
+        var enter2 = 0;
+        var saiu2 = 0;
+        var a = window.document.getElementById('area1');
+        var b = window.document.getElementById('area2');
+        b.addEventListener('click', clicarArea2);
+        b.addEventListener('mouseenter', entrouArea2);
+        b.addEventListener('mouseout', saiuArea2);
+        function clicarArea1(){
+            ++click1;
+            a.innerHTML = 'Clicou ' + click1 + (click1<2 ? ' vez' : ' vezes');
+            a.style.background = 'red';
+        }
+        function entrouArea1(){
+            ++enter1;
+            a.innerHTML = 'Entrou ' + enter1 + (enter1<2 ? ' vez' : ' vezes');
+            a.style.background = 'purple';
+        }
+        function saiuArea1(){
+            ++saiu1;
+            a.innerHTML = 'Saiu ' + saiu1 + (saiu1<2 ? ' vez' : ' vezes');
+            a.style.background = 'aqua';
+        }
+        function clicarArea2(){
+            ++click2;
+            b.innerHTML = 'Clicou ' + click2 + (click2<2 ? ' vez' : ' vezes');
+            b.style.background = 'pink';
+        }
+        function entrouArea2(){
+            ++enter2;
+            b.innerHTML = 'Entrou ' + enter2 + (enter2<2 ? ' vez' : ' vezes');
+            b.style.background = 'green';
+        }
+        function saiuArea2(){
+            ++saiu2;
+            b.innerHTML = 'Saiu ' + saiu2 + (saiu2<2 ? ' vez' : ' vezes');
+            b.style.background = 'black';
+        }
+    </script>
+</body>
+</html>

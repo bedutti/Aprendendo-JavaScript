@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Online</h1>
+    </header>
+    <section>
+        <table align="center">
+            <tr>
+                <div id="resultado"></div>
+            </tr>
+            <tr>
+                <td><div id="ce" onclick="ce()">CE</div></td><td><div id="c" onclick="c()">C</div></td><td><div id="del" onclick="del()">del</div></td><td><div id="divisao" onclick="divisao()">/</div></td>
+            </tr>
+            <tr>
+                <td><div id="n7" onclick="n7()">7</div></td><td><div id="n8" onclick="n8()">8</div></td><td><div id="n9" onclick="n9()">9</div></td><td><div id="vezes" onclick="vezes()">x</div></td>
+            </tr>
+            <tr>
+                <td><div id="n4" onclick="n4()">4</div></td><td><div id="n5" onclick="n5()">5</div></td><td><div id="n6" onclick="n6()">6</div></td><td><div id="menos" onclick="menos()">-</div></td>
+            </tr>
+            <tr>
+                <td><div id="n1" onclick="n1()">1</div></td><td><div id="n2" onclick="n2()">2</div></td><td><div id="n3" onclick="n3()">3</div></td><td><div id="mais" onclick="mais()">+</div></td>
+            </tr>
+            <tr>
+                <td><div></div></td><td><div id="n0" onclick="n0()">0</div></td><td><div id="virgula" onclick="virgula()">,</div></td><td><div id="igual" onclick="igual()">=</div></td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
