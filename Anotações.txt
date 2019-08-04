@@ -155,6 +155,11 @@ switch(expressão){
 	bla bla
 	break;
 }
+funções
+function ação(parametros){ //opcionalmente posso passar o valor padrao do parametro, function(a=0,b=0){}
+	return qualquerCoisa
+}
+RECURSIVIDADE: usar a propria função dentro dela mesma
 
 O nome da variável se chama identificadores
 Identificadores devem:
