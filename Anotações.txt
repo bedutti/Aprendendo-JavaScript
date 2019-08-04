@@ -187,3 +187,12 @@ Strings => entre aspas " " ou aspas simples ' ' são strings normais, entre cras
 s.length() //quantas letras tem a string
 s.toUpperCase() //tudo letra maiusculas
 s.toLowerCase() //tudo minusculo
+
+declarar objeto
+
+let amigo = {
+	nome:`José`,
+	sexo:`M`,
+	peso:85.4,
+	engordar(p){}
+}
